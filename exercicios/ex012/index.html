@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens flexivel</title>
+</head>
+<body>
+    <h1>imagens que se adaptam </h1>
+    <p>diferentes tamanho de imagens para diferentes despositivos ou so diminuir e aumentar a tela para ver a magica</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fp.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/fm.png" type="image/png">
+        <img src="imagens/fg.png" alt="foto flexivel">
+    </picture>
+    <h1>inserindo audio</h1>
+    <p>vamos reproduzir um audio em html 5</p>
+    <audio src="media/ex021.mp3" controls autoplay></audio>
+    <p>caso nao consiga reproduzir aqui esta um link para <a href="media/audio.zip" download >download do audio</a></p>
+</body>
+</html>

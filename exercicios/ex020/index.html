@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo classes</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        div > p{
+            display: none;
+        }
+
+        div:hover >p{
+            display: block;
+            text-align: center;
+
+        }
+
+        div:hover{
+            background-color: yellow;
+            border-radius: 20px;
+        }
+       
+        .d2 > p {
+            background-color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            
+        }
+        .d1 > p {
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        .d3 > p {
+            background-color: rgb(119, 6, 148);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">01
+        <p>texto</p>
+    </div>
+    <div class="d2">02 
+        <p>texto 2</p>
+    </div>
+    <div class="d3">03 
+        <p>texto 3</p>
+    </div>
+</body>
+</html>
